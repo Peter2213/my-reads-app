@@ -13,7 +13,7 @@ function App() {
   Api.getAll().then((book) => SetResponseData(book))
   }
    , [])
-   // handlig the ShelfBook for any book 
+   // handling the place of the book 
    const changeShelf = async(book , place) =>{
     await Api.update(book , place)
     await Api.getAll().then((r) => SetResponseData(r))
